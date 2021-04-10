@@ -83,4 +83,8 @@ class Player
         @down_cards.length > 0 || @pow_cards.length > 0 || @winnings.length > 0
     end
 
+    def unplayed_cards_remaining?
+        @down_cards.length > 0 || @winnings.length > 0
+    end
+
 end
